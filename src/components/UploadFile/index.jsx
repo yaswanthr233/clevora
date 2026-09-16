@@ -28,7 +28,7 @@ const UploadFile = () => {
                     method: 'POST',
                     body: formData,
                 }
-                const response = await fetch('https://workflow.ccbp.in/webhook/ae583581-5331-4020-ac3a-888df91be95f', options);
+                const response = await fetch(import.meta.env.VITE_N8N_WEBHOOK_URL, options);
                 if(response.ok){
                     const data = await response.json();
                     console.log(data);
