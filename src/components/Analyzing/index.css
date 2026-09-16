@@ -1,0 +1,48 @@
+.analyzing-container {
+    margin-left:0px;
+    width: 92%;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.analyzing-text{
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    animation: fadeIn 1s ease-in-out infinite alternate;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.analyzing-logo-container{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #deeafd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    .analyzing-container {
+        width: 80%;
+        margin-left: 0px;
+        margin-bottom: 20px;
+    }
+}

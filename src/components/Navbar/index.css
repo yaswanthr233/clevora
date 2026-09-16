@@ -1,0 +1,120 @@
+.navbar{
+    background-color: #ffffff;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 20px;
+    width: 100%;
+    border-bottom: 1px solid #e0e0e0;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-logo-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    align-self: flex-start;
+}
+
+.navbar-logo-img{
+    height: 60px;
+    margin-top:10px;
+    width: 60px;
+}
+
+.navbar-logo-text{
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: -7px;
+    color: #000000;
+}
+
+.navbar-logo-text span{
+    color: #007bff;
+}
+
+.navbar-components-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    width: 30%;
+    justify-content: space-around;
+    margin:auto;
+}
+
+.navbar-component{
+    font-size: 18px;
+    color: #2c2c2c;
+    text-decoration: none;
+    margin-top: 20px;
+    cursor: pointer;
+    height: 70%;
+}
+
+.navbar-component:hover{
+    color: #007bff;
+}
+
+.navbar-button-container{
+    display: none;
+}
+
+.mobile-nav {
+    display: none;
+}
+
+
+
+@media screen and (max-width: 767px){
+    .navbar{
+        justify-content: space-between;
+        width: 100%;
+        margin-left: -20px;
+    }
+    .navbar-logo-text{
+        font-size: 20px;
+    }
+    .navbar-components-container{
+        display: none;
+    }
+    .navbar-button-container{
+        display: block;
+        margin-right: 20px;
+    }
+
+    .menu-button{
+        display: block;
+    }
+
+    .mobile-nav {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        padding: 20px;
+        box-sizing: border-box;
+        flex-direction: column;
+        gap: 20px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+    .mobile-nav.open {
+        display: flex;
+    }
+
+
+    .navbar-mobile-component{
+        margin-left: 20px;
+        font-size: 18px;
+        color: #2c2c2c;
+    }
+    .navbar-mobile-component:hover{
+        color: #007bff;
+    }
+}
